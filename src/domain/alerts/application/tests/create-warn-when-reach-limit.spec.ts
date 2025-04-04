@@ -1,6 +1,6 @@
 import type { WarnRepository } from "@/domain/alerts/application/repositories/warn-repository";
 import type { Warn } from "@/domain/alerts/enterprise/entities/warns";
-import { SendWarnWhenReachInProductLimit } from "../send-warn-when-reach-product-limit";
+import { SendWarnWhenReachInProductLimit } from "../use-cases/create-warn-when-reach-limit";
 
 const fakeWarnRepository: WarnRepository = {
   create: async (warn: Warn) => {

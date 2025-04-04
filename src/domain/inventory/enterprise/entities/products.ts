@@ -1,7 +1,9 @@
 import { Entity } from "@/core/entitites/entity"
+import type { UniqueEntityID } from "@/core/entitites/unique-entity-id"
 import type { Propertie } from "./properties"
 
 interface ProductProps {
+  id: UniqueEntityID
   name: string
   properties: Propertie[]
   salePrice: string
@@ -32,7 +34,7 @@ export class Product extends Entity<ProductProps> {
     this.props.salePrice = salePrice
   }
 
-  create(props: ProductProps) {
+  static create(props: ProductProps) {
     const newProduct = new Product({
       ...props
     })

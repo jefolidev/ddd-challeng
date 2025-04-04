@@ -1,7 +1,7 @@
 import { UniqueEntityID } from "@/core/entitites/unique-entity-id";
 import type { WarnRepository } from "@/domain/alerts/application/repositories/warn-repository";
-import { Warn } from "../alerts/enterprise/entities/warns";
-import { Storage, type StorageProps } from "../inventory/enterprise/entities/storage";
+import { Storage, type StorageProps } from "../../../inventory/enterprise/entities/storage";
+import { Warn } from "../../enterprise/entities/warns";
 
 interface SendWarnWhenReachInProductLimitRequest {
   productId: string

@@ -20,10 +20,9 @@ export class Propertie extends Entity<PropertiesProps> {
     return this.props.content
   }
 
-  create(props: PropertiesProps, id: UniqueEntityID) {
+  static create(props: PropertiesProps) {
     const newPropertie = new Propertie({
       ...props,
-      productId: id,
     })
 
     return newPropertie

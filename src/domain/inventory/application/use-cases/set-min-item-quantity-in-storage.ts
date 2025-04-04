@@ -1,0 +1,4 @@
+interface SetMinProductQuantityInStorageRequest {}
+
+interface SetMinProductQuantityInStorageResponse {}
+

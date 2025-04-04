@@ -1,7 +1,7 @@
 import { UniqueEntityID } from "@/core/entitites/unique-entity-id"
 import type { ItemOrderRepository } from "@/domain/inventory/application/repositories/item-order-repository"
 import type { SaleOrder } from "@/domain/purchase-orders/enterprise/entities/sale-order"
-import { OpenItemOrderUseCase } from "../open-item-order"
+import { OpenItemOrderUseCase } from "../use-cases/create-iterm-orter"
 
 const fakeItemOrderRepository: ItemOrderRepository = {
   create: async (itemOrder: SaleOrder) => {
