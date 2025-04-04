@@ -1,6 +1,6 @@
 import { Entity } from "@/core/entitites/entity";
 import type { UniqueEntityID } from "@/core/entitites/unique-entity-id";
-import type { Permission } from "./permissions";
+import type { Permission } from "@/domain/employee/enterprise/entities/permissions";
 
 interface RolesPrps {
   roleId: string

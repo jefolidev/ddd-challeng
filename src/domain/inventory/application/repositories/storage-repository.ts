@@ -1,4 +1,4 @@
-import type { StorageProps } from "@/domain/entities/storage";
+import type { StorageProps } from "@/domain/inventory/enterprise/entities/storage";
 
 
 export interface StorageRepository {

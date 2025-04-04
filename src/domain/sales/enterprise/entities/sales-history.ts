@@ -1,6 +1,6 @@
 import { Entity } from "@/core/entitites/entity";
 import type { UniqueEntityID } from "@/core/entitites/unique-entity-id";
-import type { Product } from "./products";
+import type { Product } from "../../../inventory/enterprise/entities/products";
 import type { Sale } from "./sales";
 
 interface SalesHistoryProps {

@@ -1,6 +1,6 @@
 import { UniqueEntityID } from "@/core/entitites/unique-entity-id"
-import type { SaleOrder } from "@/domain/entities/sale-order"
-import type { ItemOrderRepository } from "@/repositories/item-order-repository"
+import type { ItemOrderRepository } from "@/domain/inventory/application/repositories/item-order-repository"
+import type { SaleOrder } from "@/domain/purchase-orders/enterprise/entities/sale-order"
 import { OpenItemOrderUseCase } from "../open-item-order"
 
 const fakeItemOrderRepository: ItemOrderRepository = {

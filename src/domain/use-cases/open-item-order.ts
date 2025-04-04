@@ -1,6 +1,6 @@
 import { UniqueEntityID } from "@/core/entitites/unique-entity-id";
-import type { ItemOrderRepository } from "@/repositories/item-order-repository";
-import { SaleOrder } from "../entities/sale-order";
+import type { ItemOrderRepository } from "@/domain/inventory/application/repositories/item-order-repository";
+import { SaleOrder } from "../purchase-orders/enterprise/entities/sale-order";
 
 interface ItemOrderUseCaseRequest {
   productId: string

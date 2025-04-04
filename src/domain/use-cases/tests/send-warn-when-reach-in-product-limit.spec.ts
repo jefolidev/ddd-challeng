@@ -1,5 +1,5 @@
-import type { Warn } from "@/domain/entities/warns";
-import type { WarnRepository } from "@/repositories/warn-repository";
+import type { WarnRepository } from "@/domain/alerts/application/repositories/warn-repository";
+import type { Warn } from "@/domain/alerts/enterprise/entities/warns";
 import { SendWarnWhenReachInProductLimit } from "../send-warn-when-reach-product-limit";
 
 const fakeWarnRepository: WarnRepository = {
