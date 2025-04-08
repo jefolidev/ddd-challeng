@@ -80,7 +80,7 @@
 
 - [x] Funcionarios devem poder adicionar informações extras, como cor e tamanho
 
-- [ ] Funcionarios devem poder definir quantidade mínimas de estoque
+- [x] Funcionarios devem poder definir quantidade mínimas de estoque
 
 - [ ] Funcionarios devem poder rastrer cada produto individualmente
 
