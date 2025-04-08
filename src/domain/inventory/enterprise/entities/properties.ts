@@ -2,14 +2,14 @@ import { Entity } from '@/core/entitites/entity'
 import { UniqueEntityID } from '@/core/entitites/unique-entity-id'
 
 export interface PropertiesProps {
-  productId: UniqueEntityID
+  id: UniqueEntityID
   name: string
   content: string | number | boolean
 }
 
 export class Propertie extends Entity<PropertiesProps> {
-  get productId() {
-    return this.props.productId
+  get id() {
+    return this.props.id
   }
 
   get name() {

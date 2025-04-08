@@ -7,4 +7,14 @@ export class InMemoryProductsRepository implements ProductRepository {
   async create(productData: Product): Promise<void> {
     this.items.push(productData)
   }
+
+  async find(id: string): Promise<Product> {
+    const item = this.items.find((i) => i.id.toString() === id)
+
+    if (!item) {
+      throw new Error('Item not founded.')
+    }
+
+    return item
+  }
 }

@@ -7,6 +7,7 @@
   - Cargo do funcionário
 
 - Cargos
+
   - Nome do cargo
   - Conjunto de permissoes
 
@@ -77,26 +78,28 @@
 
 ## Funcionário -
 
-- Funcionarios devem poder adicionar informações extras, como cor e tamanho
+- [x] Funcionarios devem poder adicionar informações extras, como cor e tamanho
 
-- Funcionarios devem poder definir quantidade mínimas de estoque
+- [ ] Funcionarios devem poder definir quantidade mínimas de estoque
 
-- Funcionarios devem poder rastrer cada produto individualmente
+- [ ] Funcionarios devem poder rastrer cada produto individualmente
 
-- Funcionarios devem poder receber alerta por email e por meio de uma notificação em sistema
+- [ ] Funcionarios devem poder receber alerta por email e por meio de uma notificação em sistema
 
-- Funcionarios devem poder receber alertas quando atingir limite mínimo de produtos em estoque
+- [ ] Funcionarios devem poder receber alertas quando atingir limite mínimo de produtos em estoque
 
-- Funcionarios devem poder visualiazar histórico de vendas
+- [ ] Funcionarios devem poder visualiazar histórico de vendas
 
 ## Histórico de Vendas -
 
 ## Ordem de compra automático
 
-- Ordens devem passar por uma revisão manual antes e se liberado, evetivamente seguindo o fluxo
-- Ordens devem verificar se a quantidade de protudo for menor que o limite min. de produtos até o alerta, gera um alerta automaticamente
-- Ordens devem enviar alertas de vendas para os funcionários com prazo de entrega e novas remessas
+- [ ] Ordens devem passar por uma revisão manual antes e se liberado, evetivamente seguindo o fluxo
+
+- [ ] Ordens devem verificar se a quantidade de protudo for menor que o limite min. de produtos até o alerta, gera um alerta automaticamente
+
+- [ ] Ordens devem enviar alertas de vendas para os funcionários com prazo de entrega e novas remessas
 
 ## Alertas
 
-- Alertas devem ler a quantidade dos produtos através do Estoque
+- [ ] Alertas devem ler a quantidade dos produtos através do Estoque
