@@ -1,5 +1,5 @@
-import { Entity } from "@/core/entitites/entity";
-import type { UniqueEntityID } from "@/core/entitites/unique-entity-id";
+import { Entity } from '@/core/entitites/entity'
+import { UniqueEntityID } from '@/core/entitites/unique-entity-id'
 
 export interface PropertiesProps {
   productId: UniqueEntityID
@@ -35,5 +35,4 @@ export class Propertie extends Entity<PropertiesProps> {
   set content(content: string | number | boolean) {
     this.props.content = content
   }
-
 }
