@@ -1,13 +1,12 @@
-import { Entity } from "@/core/entitites/entity"
-import type { UniqueEntityID } from "@/core/entitites/unique-entity-id"
+import { Entity } from '@/core/entitites/entity'
 
-interface ItemSale {
+export interface ItemSale {
   productId: string
   quantity: number
   unitPrice: number
 }
 
-type PaymentMethodProps = "credit" | "debit" | "pix"
+export type PaymentMethodProps = 'credit' | 'debit' | 'pix'
 
 interface SalesProps {
   saleDate: Date
@@ -41,10 +40,10 @@ export class Sale extends Entity<SalesProps> {
     this.props.paymentMethod = paymentMethod
   }
 
-  create(props: SalesProps, id: UniqueEntityID) {
+  static create(props: SalesProps) {
     const newSale = new Sale({
-      ...props
-    }, id)
+      ...props,
+    })
 
     return newSale
   }

@@ -16,7 +16,7 @@ describe('Create A Product', () => {
     const properties = []
 
     const propertie = Propertie.create({
-      productId: new UniqueEntityID(),
+      id: new UniqueEntityID(),
       name: 'Cor',
       content: 'Azul',
     })

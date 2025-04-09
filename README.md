@@ -86,7 +86,7 @@
 
 - [ ] Funcionarios devem poder receber alerta por email e por meio de uma notificação em sistema
 
-- [ ] Funcionarios devem poder receber alertas quando atingir limite mínimo de produtos em estoque
+- [x] Funcionarios devem poder receber alertas quando atingir limite mínimo de produtos em estoque
 
 - [ ] Funcionarios devem poder visualiazar histórico de vendas
 
@@ -102,4 +102,4 @@
 
 ## Alertas
 
-- [ ] Alertas devem ler a quantidade dos produtos através do Estoque
+- [x] Alertas devem ler a quantidade dos produtos através do Estoque
