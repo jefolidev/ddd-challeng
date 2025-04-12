@@ -1,14 +1,14 @@
-import { Entity } from "@/core/entitites/entity";
-import type { UniqueEntityID } from "@/core/entitites/unique-entity-id";
-import type { Product } from "../../../inventory/enterprise/entities/products";
-import type { Sale } from "./sales";
+import { Entity } from '@/core/entitites/entity'
+import { Optional } from '@/types/optional'
+import { Product } from '../../../inventory/enterprise/entities/products'
+import { Sale } from './sales'
 
 interface SalesHistoryProps {
   sales: Sale[]
   historyGeneratedDate: Date
   profitGeneratedInAPeriod: number
-  whichItemWasSoldTheMost: Product[]
-  whichItemWasSoldInAPeriod: Product[]
+  whichItemWasSoldTheMost?: Product
+  whichItemWasSoldInAPeriod?: Product
 }
 
 export class SaleHistory extends Entity<SalesHistoryProps> {
@@ -32,10 +32,11 @@ export class SaleHistory extends Entity<SalesHistoryProps> {
     return this.props.whichItemWasSoldInAPeriod
   }
 
-  create(props: SalesHistoryProps, id: UniqueEntityID) {
+  static create(props: Optional<SalesHistoryProps, 'historyGeneratedDate'>) {
     const newSaleSearch = new SaleHistory({
       ...props,
-    }, id)
+      historyGeneratedDate: new Date(),
+    })
 
     return newSaleSearch
   }

@@ -82,21 +82,15 @@
 
 - [x] Funcionarios devem poder definir quantidade mínimas de estoque
 
-- [ ] Funcionarios devem poder rastrer cada produto individualmente
-
-- [ ] Funcionarios devem poder receber alerta por email e por meio de uma notificação em sistema
-
 - [x] Funcionarios devem poder receber alertas quando atingir limite mínimo de produtos em estoque
 
-- [ ] Funcionarios devem poder visualiazar histórico de vendas
+- [x] Funcionarios devem poder visualiazar histórico de vendas
 
 ## Histórico de Vendas -
 
 ## Ordem de compra automático
 
-- [ ] Ordens devem passar por uma revisão manual antes e se liberado, evetivamente seguindo o fluxo
-
-- [ ] Ordens devem verificar se a quantidade de protudo for menor que o limite min. de produtos até o alerta, gera um alerta automaticamente
+- [x] Ordens devem verificar se a quantidade de produto for menor que o limite min. de produtos até o alerta, gera um alerta automaticamente
 
 - [ ] Ordens devem enviar alertas de vendas para os funcionários com prazo de entrega e novas remessas
 

@@ -1,4 +1,5 @@
 import { Entity } from '@/core/entitites/entity'
+import type { Optional } from '@/types/optional'
 
 export interface ItemSale {
   productId: string
@@ -40,9 +41,13 @@ export class Sale extends Entity<SalesProps> {
     this.props.paymentMethod = paymentMethod
   }
 
-  static create(props: SalesProps) {
+  static create(props: Optional<SalesProps, 'totalValue'>) {
+    const totalValue = props.saledItems.reduce((items, total) => {
+      return total.unitPrice + items
+    }, 0)
     const newSale = new Sale({
       ...props,
+      totalValue,
     })
 
     return newSale
